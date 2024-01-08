@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav class="desktop-nav">
+      <div class="logo">Pramod Bhalerao</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="hamburger-nav">
+      <div class="logo">Pramod Bhalerao</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icons" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Edited__1.0.png" alt="Pramod's Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">Pramod Bhalerao</h1>
+        <p class="section__text__p2">Dot Net Devloper</p>
+        <div class="btn_container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/New Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="social-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIN Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/pramod-bhalerao-581249293/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My github Profile"
+            class="icon"
+            onclick="location.href='https://github.com/Pramod-Bhalerao'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <!-- <div class="section__pic-container">
+            <img
+            src="./assets/about-pic.png"
+            alt="profile pic of about section"
+            class="about-pic"
+          />  
+        </div> -->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Certificate</h3>
+              <p>C# Programming <br />By Infosys</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="My Education"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BCA Bachelors Degree <br />By SPPU University</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+               I'm
+              Pramod, a passionate .NET developer based in the vibrant city of
+              Pune. Armed with a degree in Computer Applications (BCA),
+              My coding journey started with a curiosity for turning lines of
+              code into functional and creative websites. Over the years, I've
+              honed my skills in .NET development, creating web applications
+              that not only meet requirements but also delight users.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow"
+        class="icon arrow"
+        onclick="location.href='#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Frontend Devlopemnt</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaSript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Backend Devlopemnt</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Intermidiate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>ASP.NET CORE</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>My SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>Entity Framwork</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Project__1__pic.jpg" alt="project one" class="project-img">
+          </div>
+          <h2 class="skills-sub-title project-title">Color Switcher</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Pramod-Bhalerao/Color-Switcher'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://switch-color.netlify.app/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Project__2__Pic.png" alt="project two" class="project-img">
+          </div>
+          <h2 class="skills-sub-title project-title">Note Taker</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Pramod-Bhalerao/Note_Taker'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://notes-taker-webapp.netlify.app/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Project__3__Pic.png" alt="project three" class="project-img">
+          </div>
+          <h2 class="skills-sub-title project-title">BMI Calculator</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Pramod-Bhalerao/BMI_Calculator'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://bmi-calculators-webapp.netlify.app/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
+          <p><a href="mailto:cs.pramodbhalerao@gmail.com">cs.pramodbhalerao@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="linkedIn icon" class="icon contact-icon">
+          <p><a href="https://www.linkedin.com/in/pramod-bhalerao-581249293/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Pramod Bhalerao. All Rights Reserved.</p>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
